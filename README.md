@@ -2,6 +2,7 @@
 
 
 ## Description
+To complete the criteria for producing and launching an ERC-20 token called "Degen" with the symbol "DGN," we'll follow an organised method. This comprises creating up a project, developing the smart contract, testing it, and finally deploying it to the Avalanche Fuji Testnet
 
 
 ## Getting Started
@@ -94,7 +95,6 @@ This is the constructor function of the GT contract. It is called just ones when
 
 ```solidity
 
-//Minting new tokens
 function mint(address to, uint amount) public onlyOwner {
     _mint(to, amount);
 }
@@ -121,7 +121,6 @@ The transferFrom function is invoked to transfer the tokens from the msg.sender 
 
 ```solidity
 
-//Redeeming tokens
         function redeemForItem(uint256 itemNo) public {
         uint256 amount;
         
